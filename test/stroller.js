@@ -25,7 +25,7 @@ describe('DOM Manipulation', function () {
 		});
 
 		before(function(done){
-			this.browser.visit("file://"+path.resolve(__dirname,"../example/stroller/index-test.html"),done);
+			this.browser.visit("file://"+path.resolve(__dirname,"../example/stroller/index.html"),done);
 		});
 
 		it('should set the css of the linotype element', function () {
