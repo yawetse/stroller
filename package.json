@@ -1,7 +1,7 @@
 {
   "name": "stroller",
   "description": "CSS3 list scroll effects, inspired by: http://lab.hakim.se/scroll-effects",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
