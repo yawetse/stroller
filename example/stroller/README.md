@@ -1,4 +1,4 @@
-# Linotype [![Build Status](https://travis-ci.org/yawetse/stroller.svg?branch=master)](https://travis-ci.org/yawetse/stroller) [![NPM version](https://badge.fury.io/js/stroller.svg)](http://badge.fury.io/js/stroller)
+# stroll.js – because it scrolls, and trolls.
 
 A collection of CSS list scroll effects. Works in browsers with support for CSS 3D transforms including a special touch-enabled mode for iOS & Android 4.x.
 
