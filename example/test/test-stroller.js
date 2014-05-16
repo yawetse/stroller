@@ -111,6 +111,7 @@ var stroller = function(options){
 			domhelper.elementWrap(currentStroller,wrapperElement);
 
 			currentStroller.addEventListener('scroll',strollerScrollEventHandler);
+
 		}
 	}.bind(this);
 
@@ -146,6 +147,10 @@ var stroller = function(options){
 	 * update classes for stroller
 	 */
 	this.setFutureAndPastClass = _setFutureAndPastClass;
+
+	for(var x = 0; x <elements.length; x++){
+		this.setFutureAndPastClass(elements[x]);
+	}
 };
 
 module.exports = stroller;
