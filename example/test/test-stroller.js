@@ -60,6 +60,7 @@ var stroller = function(options){
 			strollerContainerQuerySelector: '.strollerContainer',
 			strollerItemQuerySelector:'stroller',
 			strollerWrapperClass:'stroller-wrapper',
+			fullscreen:false,
 			effect:effects.flip
 		},
 		o = extend( defaults,options ),
@@ -129,7 +130,13 @@ var stroller = function(options){
 			if(strollerParentPosition.top > (strollerElement.getBoundingClientRect().bottom) ){
 				classie.addClass( strollerElement , 'past');
 			}
+			else if(o.fullscreen && (0>strollerElement.getBoundingClientRect().bottom)){
+				classie.addClass( strollerElement , 'past');
+			}
 			else if(strollerParent.getBoundingClientRect().bottom < (strollerElement.getBoundingClientRect().top ) ){
+				classie.addClass( strollerElement , 'future');
+			}
+			else if( o.fullscreen && ( window.innerHeight < strollerElement.getBoundingClientRect().top ) ){
 				classie.addClass( strollerElement , 'future');
 			}
 			else{
